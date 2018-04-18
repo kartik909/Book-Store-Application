@@ -1,0 +1,17 @@
+﻿@model Book_Store.Models.Book
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+<ul>
+    <li>
+        @Model.Name
+    </li>
+    <li>
+        @Model.Author
+    </li>
+</ul>
+
