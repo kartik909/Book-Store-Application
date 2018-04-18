@@ -96,3 +96,6 @@ C:\Users\kartik909\source\repos\Book Store\Book Store\obj\Debug\Book Store.pdb
 C:\Users\kartik909\source\repos\Book Store\Book Store\obj\Debug\Book_Store.Migrations.AddBookToDatabase.resources
 C:\Users\kartik909\source\repos\Book Store\Book Store\obj\Debug\Book Store.csproj.GenerateResource.cache
 C:\Users\kartik909\source\repos\Book Store\Book Store\obj\Debug\Book_Store.Migrations.AddValidationToBookModel.resources
+C:\Users\kartik909\source\repos\Book Store\Book Store\obj\Debug\Book_Store.Migrations.UpdateValidationInModel.resources
+C:\Users\kartik909\source\repos\Book Store\Book Store\obj\Debug\Book_Store.Migrations.UpdateValidationInModel1.resources
+C:\Users\kartik909\source\repos\Book Store\Book Store\obj\Debug\Book_Store.Migrations.UpdateValidationInModel3.resources

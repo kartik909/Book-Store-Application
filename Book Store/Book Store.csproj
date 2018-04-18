@@ -161,6 +161,18 @@
     <Compile Include="Migrations\201804181658437_AddValidationToBookModel.Designer.cs">
       <DependentUpon>201804181658437_AddValidationToBookModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201804181828366_UpdateValidationInModel.cs" />
+    <Compile Include="Migrations\201804181828366_UpdateValidationInModel.Designer.cs">
+      <DependentUpon>201804181828366_UpdateValidationInModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804181849274_UpdateValidationInModel1.cs" />
+    <Compile Include="Migrations\201804181849274_UpdateValidationInModel1.Designer.cs">
+      <DependentUpon>201804181849274_UpdateValidationInModel1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201804181852564_UpdateValidationInModel3.cs" />
+    <Compile Include="Migrations\201804181852564_UpdateValidationInModel3.Designer.cs">
+      <DependentUpon>201804181852564_UpdateValidationInModel3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\Book.cs" />
@@ -231,6 +243,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804181658437_AddValidationToBookModel.resx">
       <DependentUpon>201804181658437_AddValidationToBookModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804181828366_UpdateValidationInModel.resx">
+      <DependentUpon>201804181828366_UpdateValidationInModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804181849274_UpdateValidationInModel1.resx">
+      <DependentUpon>201804181849274_UpdateValidationInModel1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201804181852564_UpdateValidationInModel3.resx">
+      <DependentUpon>201804181852564_UpdateValidationInModel3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

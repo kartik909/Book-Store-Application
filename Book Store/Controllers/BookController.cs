@@ -48,28 +48,33 @@ namespace Book_Store.Controllers
 
         public ActionResult New()
         {
-          
-            return View(); 
+            var book = new Book();
+            return View(book); // problem solved of getting id value null at validation form but it give default values to the view that need to be solved
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(Book book)
         {
-            if(book.Id == 0)
+            if (!ModelState.IsValid)
             {
-                _context.Book.Add(book);
+                return View("New", book);
             }
-            else
-            {
-                var bookDb = _context.Book.SingleOrDefault(c => c.Id == book.Id);
+                if (book.Id == 0)
+                {
+                    _context.Book.Add(book);
+                }
+                else
+                {
+                    var bookDb = _context.Book.SingleOrDefault(c => c.Id == book.Id);
 
-                bookDb.Name = book.Name;
-                bookDb.Author = book.Author;
+                    bookDb.Name = book.Name;
+                    bookDb.Author = book.Author;
+                }
+                _context.SaveChanges();
+                return RedirectToAction("Index", "Book");
             }
-            _context.SaveChanges();
-            return RedirectToAction("Index", "Book");
-        }
-
+        
         public ActionResult Edit(int id)
         {
             var book = _context.Book.SingleOrDefault(b => b.Id == id);
